@@ -300,7 +300,9 @@ subquestion: |
   If you lived with others and you each paid your portion of the security deposit separately, you should each send your own demand letter.
   
   Did you make your own, independent payment for your security deposit?
-noyes: users.there_is_another 
+fields:
+  - no label: users.there_is_another
+    datatype: yesnoradio
 ---
 id: made payment with others
 question: |
@@ -318,7 +320,9 @@ continue button field: second_person_entered
 ---
 id: third user names
 question: Did anyone else contribute to the security deposit payment?
-yesno: secret_message
+fields:
+  - no label: secret_message
+    datatype: yesnoradio
 ---
 id: names of opposing parties
 question: |
@@ -349,7 +353,7 @@ fields:
       variable: other_parties[i].person_type
       is: business
 ---
-id: Review your form before you sign it
+id: "Review your form before you sign it 2"
 continue button field: security_deposit_demand_letter_for_tenants_moving_out_preview_question
 question: |
   Review your form before you sign it
@@ -360,7 +364,7 @@ subquestion: |
 ---
 progress: 100
 mandatory: True
-id: Your form is ready to download and file
+id: "Your form is ready to download and file 2"
 question: |
   Your form is ready to download
 subquestion: |
