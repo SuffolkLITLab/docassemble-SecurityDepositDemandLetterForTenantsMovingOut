@@ -302,7 +302,7 @@ subquestion: |
   Did you make your own, independent payment for your security deposit?
 fields:
   - no label: users.there_is_another
-    datatype: yesnoradio
+    datatype: noyesradio
 ---
 id: made payment with others
 question: |
